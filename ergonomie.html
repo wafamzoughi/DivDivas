@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'ergonomie : simplifier pour mieux vivre</title>
+  <link rel="stylesheet" href="ergonomie.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Remplissez les champs ci-dessous </h1>
+      <p>Essayez de remplir chaque champ avec les bonnes règles imposées.</p>
+    </header>
+
+    <main>
+      <form id="ergonomie-form">
+        <!-- Champ Email -->
+        <div class="input-group">
+          <label for="email-input">Votre adresse email :</label>
+          <input type="text" id="email-input" placeholder="Entrez votre adresse email">
+          <div id="email-feedback" class="feedback"></div>
+        </div>
+
+        <!-- Champ Date -->
+        <div class="input-group">
+          <label for="date-input">Votre date de naissance :</label>
+          <input type="text" id="date-input" placeholder="jj/mm/aaaa">
+          <div id="date-feedback" class="feedback"></div>
+        </div>
+
+        <!-- Champ Numéro de Téléphone -->
+        <div class="input-group">
+          <label for="phone-input">Votre numéro de téléphone :</label>
+          <input type="text" id="phone-input" placeholder="Entrez votre numéro">
+          <div id="phone-feedback" class="feedback"></div>
+        </div>
+        
+
+        <!-- Champ Code Postal -->
+        <div class="input-group">
+            <label for="postal-input">Votre code postal :</label>
+            <input type="text" id="postal-input" placeholder="Entrez votre code postal">
+            <div id="postal-feedback" class="feedback"></div>
+        </div>
+        <!-- Champ Adresse -->
+            <label for="address-input">Adresse :</label>
+            <input type="text" id="address-input" placeholder="Votre adresse" />
+            <div id="address-feedback" class="feedback"></div>
+
+        <!-- Champ de Téléchargement d'Image -->
+        <div class="input-group">
+            <label for="image-input">Téléchargez une image :</label>
+            <input type="file" id="image-input" accept="image/*">
+            <div id="image-feedback" class="feedback"></div>
+            <div id="image-preview" class="image-preview"></div>
+        </div>
+          
+  
+        <div id="success-message" class="success-message">Félicitations, vous avez réussi !</div>
+      </form>
+    </main>
+
+    <footer>
+      <p>Défi créé pour la Nuit de l'Info 2024.</p>
+    </footer>
+  </div>
+
+  <script src="ergonomie.js"></script>
+</body>
+</html>
